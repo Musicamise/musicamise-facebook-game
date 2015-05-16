@@ -126,6 +126,8 @@
         <fieldset>
             <h2 class="fs-title">Final Conclusion</h2>
             <h3 class="fs-subtitle">We did it!!!</h3>
+            <button onclick="share()">Share</button>
+            <div class="fb-share-button" data-href="https://www.facebook.com/musicamise/app_1422062488114479?ref=page_internal" data-layout="button_count"></div>
         </fieldset>
     </form>
     <!-- jQuery -->
@@ -180,7 +182,14 @@ function onLogin(response) {
   }
 }
 
-
+function share(){
+    FB.ui({
+      method: 'share',
+      href: 'https://www.facebook.com/musicamise/app_1422062488114479?ref=page_internal',
+    }, function(response){
+        response;
+    });
+}
 
 
 
