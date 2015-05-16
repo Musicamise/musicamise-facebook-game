@@ -15,9 +15,15 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/css.css">
 
     <!-- Custom CSS -->
+    <% if(query.image) {%>
+           <meta property="og:image" content="https://musicamise-game.herokuapp.com/img/<%- query.image -%>"/>
+
+    <% } else { %>
+           <meta property="og:image" content="https://musicamise-game.herokuapp.com/img/1.png"/>
+
+    <% } %>
 
 
-          <meta property="og:image" content="https://musicamise-game.herokuapp.com/img/1.png"/>
 
 
     <meta property="og:title" content="Musicamise - game"/>
@@ -34,6 +40,8 @@
     <meta property="og:description" content="Musicamise + Música" >  
 
     <meta property="fb:app_id" content="1422062488114479" >
+
+    <meta property="fb:admins" content="" >
     <!-- Custom Fonts -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
