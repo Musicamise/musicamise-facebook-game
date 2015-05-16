@@ -15,7 +15,20 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/css.css">
 
     <!-- Custom CSS -->
+  <!-- Custom CSS -->
+    <% if (query) {%>
 
+    <% } else { %>
+
+    <% } %>
+
+
+<meta property="og:title" content="The Rock"/>
+<meta property="og:type" content="movie"/>
+<meta property="og:url" content="http://www.imdb.com/title/tt0117500/"/>
+<meta property="og:image" content="http://ia.media-imdb.com/rock.jpg"/>
+
+  
     <!-- Custom Fonts -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -126,8 +139,7 @@
         <fieldset>
             <h2 class="fs-title">Final Conclusion</h2>
             <h3 class="fs-subtitle">We did it!!!</h3>
-            <button onclick="share()">Share</button>
-            <div class="fb-share-button" data-href="https://www.facebook.com/musicamise/app_1422062488114479?ref=page_internal" data-layout="button_count"></div>
+            <div class="fb-like" data-href="https://www.facebook.com/musicamise/app_1422062488114479?ref=page_internal" data-layout="button_count" data-ref="teste" data-action="like" data-show-faces="true" data-share="true"></div>
         </fieldset>
     </form>
     <!-- jQuery -->
