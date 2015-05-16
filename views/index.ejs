@@ -217,14 +217,14 @@ function share(){
     description = "description";
     FB.ui({
       method: 'share_open_graph',
-      action_type: 'og.likes',
+      action_type: 'og.article',
       action_properties:  JSON.stringify({
            'og:type': 'article',
            'og:url': "https://musicamise-game.herokuapp.com/",
            'og:title': "I got "+resp+"! Which European are you destined to date?",
            'og:description': description,
            'og:image': img
-      })
+          })
     }, function(response){
        // response;
     });
