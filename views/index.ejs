@@ -215,13 +215,14 @@ function share(){
     resp = "Teste";
     img = "https://musicamise-game.herokuapp.com/img/downloads-bg.jpg";
     description = "description";
+    url = "https://www.facebook.com/musicamise/app_1422062488114479"
     FB.ui({
       method: 'share_open_graph',
       action_type: 'musicamise:share',
       action_properties:  JSON.stringify({
         article:{
            'og:type': 'article',
-           'og:url': "https://musicamise-game.herokuapp.com/",
+           'og:url': url,
            'og:title': "I got "+resp+"! Which European are you destined to date?",
            'og:description': description,
            'og:image': img
