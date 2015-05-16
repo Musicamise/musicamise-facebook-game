@@ -211,8 +211,17 @@ function onLogin(response) {
 
 function share(){
     FB.ui({
-      method: 'share',
-      href: 'https://www.facebook.com/musicamise/app_1422062488114479?ref=page_internal',
+      method: 'share_open_graph',
+      action_type: 'og.likes',
+      action_properties:  JSON.stringify({
+        'quiz': {
+           'og:type': 'matchadviceuk:quiz',
+           'og:url': "https://musicamise-game.herokuapp.com/",
+           'og:title': "I got "+response.country+"! Which European are you destined to date?",
+           'og:description': response.body,
+           'og:image': response.image
+        }
+      })
     }, function(response){
        // response;
     });
