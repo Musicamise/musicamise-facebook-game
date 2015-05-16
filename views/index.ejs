@@ -16,17 +16,18 @@
 
     <!-- Custom CSS -->
   <!-- Custom CSS -->
-    <% if (query) {%>
+    <% if (query.image) {%>
+       
+    <meta property="og:image" content="img/<%= query.image%>"/>
 
     <% } else { %>
-
+  <meta property="og:image" content="http://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Chrome_Logo.svg/1024px-Chrome_Logo.svg.png"  >
     <% } %>
 
 
 <meta property="og:title" content="The Rock"/>
 <meta property="og:type" content="movie"/>
 <meta property="og:url" content="http://www.imdb.com/title/tt0117500/"/>
-<meta property="og:image" content="http://ia.media-imdb.com/rock.jpg"/>
 
   
     <!-- Custom Fonts -->
